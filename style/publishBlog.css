@@ -82,7 +82,12 @@ body{
     background: #eee;
     overflow: hidden;
 }
-
+.Editor-editor{
+    outline:0;
+}
+.group-introduce-input{
+    outline: 0;
+}
 .labelBox{
     width:100%;
     height:40px;
@@ -115,10 +120,8 @@ body{
     border: none;
     float: left;
     display: block;
-    width: auto;
     outline: none;
-    min-width: 10px;
-    max-width: 100%;
+   width:300px;
     background: none;
     height: 40px;
     line-height: 40px;
@@ -227,4 +230,8 @@ body{
 /*返回上一页*/
 #backPrevPage:hover{
     cursor:pointer;
+}
+
+.hahahahaha{
+
 }

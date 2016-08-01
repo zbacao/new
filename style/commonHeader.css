@@ -80,18 +80,22 @@ body{
     margin-right:9px;
 }
 /*听说后的数字圈*/
-.header .header-in .main-nav li #ts-num{
+/*#nav-ts{*/
+    /*position:relative;*/
+/*}*/
+.main-nav ul li #ts-num{
     border-radius: 50%;
-    width: 17px;
-    height: 17px;
+    /* width: 17px; */
+    /* height: 17px; */
     font-size: 12px;
     background: #e8152d;
     color: #fff;
     position: absolute;
     top: -2px;
-    left: 148px;
+    left: 24.5%;
     text-align: center;
     z-index: 1000;
+    padding: 0 1px 1px 0;
 }
 /*主导航栏当前按钮样式*/
 .header .header-in .main-nav  li a.navs.on{

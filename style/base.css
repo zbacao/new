@@ -151,7 +151,7 @@
 /*每一屏的通用设置  start*/
 .swiper-p-yz .p-yz-cont{
     float:left;
-    width:49.8%;
+    /*width:49.8%;*/
     height:208px;
     border:1px solid #fff;
     overflow:hidden;
@@ -208,7 +208,7 @@
     color:#ccc;
     position: absolute;
     top: 44px;
-    left: 95px;
+    left: 28%;
 }
 .time i.time-icon{
     width:20px;
@@ -303,10 +303,13 @@
     margin-bottom:15px;
 }
 .p-ts .p-album .album-introduce .album-desc{
-    font-size:14px;
-    color:#666;
-    line-height:16px;
+    font-size: 14px;
+    color: #666;
+    /* line-height: 16px; */
+    line-height: 1.2em;
     letter-spacing: 2px;
+    overflow: hidden;
+    height: 115px;
 }
 /*专辑介绍 end */
 /*横向的专辑  end*/
@@ -384,7 +387,7 @@
 /*每一屏的通用设置  start*/
 .swiper-p-yq .p-yq-cont{
     float:left;
-    width:49.8%;
+    /*width:49.8%;*/
     /*height:208px;*/
     border:1px solid #fff;
     overflow:hidden;
@@ -437,7 +440,7 @@
     color:#ccc;
     position: absolute;
     top: 44px;
-    left: 95px;
+    left: 28%;
 }
 .time i.time-icon{
     width:20px;
@@ -519,7 +522,7 @@
 .p-ll  .swiper-p-ll .chat .chat-R .chat-cont{
     margin: 0 0 0 10px;
     font-size: 14px;
-    height: 55px;
+    height: 63px;
     overflow: hidden;
 }
 /*************聊聊板块  end **********/
@@ -531,7 +534,7 @@
 }
 .p-yj .note{
     float:left;
-    width:279px;
+    width:278px;
     height:470px;
     margin-right:25px;
     border:1px solid #bababa;
@@ -602,7 +605,7 @@
 .p-other li{
     float:left;
     width:298px;
-    height:33.33%;
+    height:200px;
 }
 .p-other .p-details img{
     width:100%;

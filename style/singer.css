@@ -245,6 +245,7 @@ div.gs-songs{
     line-height: 100px;
     width: 100%;
     text-align: center;
+    -moz-user-select:none;
 }
 .song-page span{
     vertical-align: middle;

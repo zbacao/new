@@ -3,16 +3,15 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="style/font-awesome.min.css"/>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">                  &lt;!&ndash;bootstrap字体&ndash;&gt;-->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1469688752_4929159.css"/>                                                              <!-- 阿里巴巴字体-->
     <link href="style/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/init.css"/>
     <link rel="stylesheet" href="style/commonHeader.css"/>
     <link rel="stylesheet" href="style/commonFooter.css">
     <link rel="stylesheet" href="style/login-tanchuceng.css"/>
     <link rel="stylesheet" href="style/publishBlog.css"/>
-    <link rel="stylesheet" type="text/css" href="editer-moudle/css/default.css">
-    <link href="editer-moudle/css/editor.css" type="text/css" rel="stylesheet"/>
+    <link href="style/editor.css" type="text/css" rel="stylesheet"/>
 
 </head>
 <body>
@@ -124,7 +123,7 @@
 
 <!-- ----------------------------------中间主体部分 start----------------------------------->
 
-<div class="pb-container">
+<div class="pb-container editor-set">
     <div class="pb-header clearFix">
         <span id="backPrevPage">&lt;返回</span>
         <h3>发布帖子</h3>
@@ -140,9 +139,9 @@
         </div>
     </div>
     <form action="">
-        <input id="input_blog_title" type="text" placeholder="请输入标题（必填）" autofocus required/>
+        <input id="input_blog_title" type="text" placeholder="请输入标题（必填）"  />
         <div id="blog-editer">
-            <textarea placeholder="在这里输入你想说的话..." id="txtEditor" required ></textarea>
+            <textarea class="group-introduce-input" placeholder="在这里输入你想说的话..." id="txtEditor"  ></textarea>
         </div>
         <div class="labelBox clearFixBlog">
             <div class="i_inp"  id="paren"  style="  min-height:30px; cursor:pointer; height:auto;     ">
@@ -151,7 +150,7 @@
                             <div  id="dart"  style="  cursor:move; height:22px; display:block; float:left;   line-height:22px; "></div>
                         </div>
                     </span>
-                <input class="ipva"   name=""    type="text"  required/>
+                <input class="ipva"   name=""    type="text"   />
             </div>
 
         </div>
@@ -171,12 +170,12 @@
             <span class="upload-music-title">上传音乐</span>
             <span class="upload-music-tips">*上传文件格式仅限: mp3／m4a</span>
             <i>上传音乐</i>
-            <span class="music-name">她说</span>
-            <input class="input-of-btn" type="file" value="上传音乐" required/>
+            <span class="music-name"></span>
+            <input class="input-of-btn" type="file" value="上传音乐" />
         </div>
-        <textarea name="" id="introduce_music"  maxlength="100" required placeholder="请介绍一下你上传的音乐..."></textarea>
+        <textarea name="" id="introduce_music"  maxlength="100"  placeholder="请介绍一下你上传的音乐..."></textarea>
         <div class="submitBtn">
-            <input type="submit" id="publicBlog" value="发表帖子"/>
+            <input type="button" id="publicBlog" value="发表帖子"/>
             <button id="save">保存草稿</button>
         </div>
     </form>
@@ -244,7 +243,7 @@
 </div>
 <div class="bottom">
     <div class="bot-con">
-        <span><a href="#">关于我们</a></span>
+        <span><a href="joinUs.html">关于我们</a></span>
         <span><a href="#">联系我们</a></span>
         <span><a href="#">加入我们</a></span>
         <span><a href="#">团队成员</a></span>
@@ -257,10 +256,13 @@
 <!-- ----------------------------------公共登录弹窗模块  end----------------------------------->
 </body>
 <script src="script/jquery-2.1.1.min.js"></script>
-<script src="editer-moudle/js/html5shiv.min.js"></script>
+<script src="script/editor/html5shiv.min.js"></script>
 <script src="script/login-tanchuceng.js"></script>
-<script src="script/bootstrap.min.js"></script>
-<script src="editer-moudle/js/editor.js"></script>
-<script src="editer-moudle/js/ui.sortable.min.js"></script>
+<script src="script/editor/bootstrap.min.js"></script>
+<script src="script/editor/editor.js"></script>
+<!--<script src="script/editor/ui.sortable.min.js"></script>-->
 <script src="script/publishBlog.js"></script>
+<script>
+    $("#txtEditor").Editor();
+</script>
 </html>

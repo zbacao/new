@@ -11,6 +11,7 @@
     <script src="script/jquery-2.1.1.min.js"></script>
     <script src="script/singer.js"></script>
     <script src="script/login-tanchuceng.js"></script>
+    <script src="script/pagination2.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -335,15 +336,15 @@
 						</li>
 					</ul>
 				</div>
-				<div class="song-page">
-					<span class="gs-page">&lt;&lt;</span>
+				<div class="song-page" onselectstart="return false;">
+					<span class="gs-page-first">&lt;&lt;</span>
 					<span class="gs-pageadv">&lt;</span>
 					<span class="gs-pages on">1</span>
 					<span class="gs-pages">2</span>
 					<span class="gs-pages">3</span>
 					<span class="gs-pages">4</span>
 					<span class="gs-pagenext">&gt;</span>
-					<span class="gs-page">&gt;&gt;</span>
+					<span class="gs-page-end">&gt;&gt;</span>
 				</div>
 				<div class="gs-comment" id="comment">
 					<p class="gs-comtitle">
@@ -529,7 +530,7 @@
 	</div>
 	<div class="bottom">
 		<div class="bot-con">
-			<span><a href="#">关于我们</a></span>
+			<span><a href="joinUs.html">关于我们</a></span>
 			<span><a href="#">联系我们</a></span>
 			<span><a href="#">加入我们</a></span>
 			<span><a href="#">团队成员</a></span>

@@ -12,6 +12,7 @@
     <script src="script/listenSpeak.js"></script>
     <script src="script/login-tanchuceng.js"></script>
     <script src="script/chat.js"></script>
+    <script src="script/pagination.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -246,6 +247,24 @@
 				</span>
 			</div>
 		</div>
+        <div class="ts-card">
+            <div class="ts-card-head">
+                <span class="ts-cardicon"></span>
+                <span class="ts-cardname">
+                    <p>不如我们从头开始</p>
+                    <em>碧池大大</em>
+                </span>
+                <i>故事</i>
+            </div>
+            <img src="image/listenSpeak/zhanshi2.jpg" alt="">
+            <div class="ts-card-foot">
+                <p>欢乐童年系列之一</p>
+                <span class="ts-cardfoot-icon">
+                    <b class="ts-cardicon1"></b><i>22</i>
+                    <b class="ts-cardicon2"></b><i>22</i>
+                </span>
+            </div>
+        </div>
 		<!-- 写点击卡片的弹窗效果div 点击相应的卡片 弹出对应的图片和评论-->
 		<div class="ts-popcard">
 			<img src="image/listenSpeak/pupimg.jpg" alt="">
@@ -308,16 +327,16 @@
 			</div>
 		</div>
 		<!-- 底部的分页导航按钮 未完成js的逻辑-->
-		<div class="ts-page">
-			<span class="tspage-start">首页</span>
-			<span class="tspage-before">上一页</span>
-			<span>1</span>
-			<span>2</span>
-			<span>3</span>
-			<span>4</span>
-			<span class="tspage-ell">...</span>
-			<span class="tspage-after">下一页</span>
-			<span class="tspage-end">尾页</span>
+		<div class="ts-page" onselectstart="return false;">
+<!--             <span class="tspage-start">首页</span>
+<span class="tspage-before">上一页</span>
+<span class="page on">1</span>
+<span class="page">2</span>
+<span>3</span>
+<span>4</span>
+<span class="tspage-ell">...</span>
+<span class="tspage-after">下一页</span>
+<span class="tspage-end">尾页</span> -->
 		</div>
 	</div>
 	<div class="mengban"></div><!-- 这个是弹出框的蒙版  需要蒙版的都可以这么设置 -->
@@ -382,7 +401,7 @@
 	</div>
 	<div class="bottom">
 		<div class="bot-con">
-			<span><a href="#">关于我们</a></span>
+			<span><a href="joinUs.html">关于我们</a></span>
 			<span><a href="#">联系我们</a></span>
 			<span><a href="#">加入我们</a></span>
 			<span><a href="#">团队成员</a></span>

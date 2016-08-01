@@ -229,24 +229,33 @@
     text-align: center;
     font-size: 24px;
     color: #333333;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+.xq-geci .xq-lyc{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
 }
 .xq-geci .lyc{
     display: block;
     margin: 0 auto;
     width: 495px;
-    height: 440px;
+    height: auto;
     text-align: center;
     overflow: hidden;
     position: absolute;
-    top:50px;
 }
 .xq-geci .lyc p{
     text-align: center;
     color: #888888;
     font-size: 14px;
     padding:8px 0;
+}
+.xq-geci .lyc p.on{
+    color:#109d59;
 }
 .xq-conthead a{
     float: right;
@@ -262,6 +271,9 @@
     background:url(../image/singer/play-big.png) center no-repeat;
     width: 62px;
     height: 59px;
+}
+.xq-singer .xq-control.on{
+    background:url(../image/singer/play-bigon.png) center no-repeat;
 }
 .xq-albumjj{
     width: 795px;

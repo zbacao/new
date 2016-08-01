@@ -326,6 +326,7 @@
 	width: 100%;
 	text-align: center;
 	margin-bottom: 100px;
+	-moz-user-select:none;
 }
 .ts-page span{
 	display: inline-block;
@@ -339,7 +340,17 @@
 	margin:0 4px;
 	box-shadow: 0px 2px 3px gray;
 }
-.ts-page span.on{
+.ts-page .tspage-ell{
+	cursor:auto;
+	background-color: #f2f2f2;
+	box-shadow: none;
+	margin:0;
+}
+.ts-page span.disable{
+	cursor: not-allowed;
+	color:#333;
+}
+.ts-page .page.on{
 	background-color: #109d59;
 	color: #fff;
 }

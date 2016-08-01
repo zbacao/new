@@ -12,6 +12,8 @@
     <script src="script/jquery-2.1.1.min.js"></script>
     <script src="script/songDetails.js"></script>
     <script src="script/login-tanchuceng.js"></script>
+    <script src="script/lycfollow.js"></script>
+    <script src="script/pagination2.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -136,24 +138,16 @@
                         <p class="belong">所属专辑：<span>刚刚好</span></p>
                     </div>
                     <i class="xq-control"></i>
-                <audio id="audio" src="res/刚刚好.mp3"></audio>
+                <audio id="audio" src=""></audio>
                 </div>
                 <div class="xq-geci">
                     <h2 class="xq-gctitle">刚刚好</h2>
-                    <div id="lyc" class="lyc">
-                        <p class="lyc-text on"> 如果有人在灯塔</p>
-                        <p class="lyc-text"> 拨弄她的头发</p>
-                        <p class="lyc-text"> 思念刻在墙和瓦</p>
-                        <p class="lyc-text"> 如果感情会挣扎</p>
-                        <p class="lyc-text"> 没有说的儒雅</p>
-                        <p class="lyc-text">把挽回的手放下</p>
-                        <p class="lyc-text">镜子里的人说假话</p>
-                        <p class="lyc-text">违心的样子你决定了吗</p>
-                        <p class="lyc-text">装聋或者作哑 要不我先说话</p>
-                        <p class="lyc-text">我们的爱情 到这刚刚好</p>
-                        <p class="lyc-text">剩不多也不少 还能忘掉</p>
-                        <p class="lyc-text">我应该可以 把自己照顾好</p>
-                        <p class="lyc-text">我们的距离 到这刚刚好</p>
+                    <div class="xq-lyc">
+                        <div id="lyc" class="lyc">
+                            <!-- <p class="lyc-text on"> 如果有人在灯塔</p>
+                            <p class="lyc-text"> 拨弄她的头发</p>
+                            <p class="lyc-text"> 思念刻在墙和瓦</p> -->
+                        </div>
                     </div>
                 </div>
                 <a href="#">举报</a>
@@ -286,19 +280,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="song-page">
-                    <span class="gs-page">&lt;&lt;</span>
-                    <span class="gs-pageadv">&lt;</span>
-                    <span class="gs-pages on">1</span>
-                    <span class="gs-pages">2</span>
-                    <span class="gs-pages">3</span>
-                    <span class="gs-pages">4</span>
-                    <span class="gs-pages">5</span>
-                    <span class="gs-pages">6</span>
-                    <span class="gs-pages">7</span>
-                    <span class="gs-pages">8</span>
-                    <span class="gs-pagenext">&gt;</span>
-                    <span class="gs-page">&gt;&gt;</span>
+                <div class="song-page" onselectstart="return false;">
+                <!-- 这里面是js动态生成的页码 -->
                 </div>
             </div>
         </div>
@@ -463,7 +446,7 @@
     </div>
     <div class="bottom">
         <div class="bot-con">
-            <span><a href="#">关于我们</a></span>
+            <span><a href="joinUs.html">关于我们</a></span>
             <span><a href="#">联系我们</a></span>
             <span><a href="#">加入我们</a></span>
             <span><a href="#">团队成员</a></span>
