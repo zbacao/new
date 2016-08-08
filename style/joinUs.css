@@ -107,3 +107,24 @@
     background-color: #47d4e6;
     margin-top: 5px;
 }
+.j_abUs{
+    width: 650px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.j_abUs_p1{
+        margin-top: 80px;
+        font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+}
+.j_abUs_p2{
+    margin-top: 30px;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #282828;
+    display: block;
+    width: 500px;
+    line-height: 3;
+}

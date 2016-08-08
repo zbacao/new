@@ -22,6 +22,9 @@
              z-index:20000;
              display:none;
         }
+         /*.login-reg-select{*/
+             /*width:300px;*/
+         /*}*/
         .login-reg-select a{
             display:block;
             float:left;
@@ -73,7 +76,7 @@
          .login-box .account-box{
             position: absolute;
             top: 70px;
-            left: 20px;
+            /*left: 20px;*/
             display: block;
             width:300px;
         }

@@ -151,7 +151,7 @@
 				for (var i = 0, f; f = files[i]; i++) {
 					//Loop thorugh all the files
 					if(!f.type.match('image.*') || !f.name.match(/(?:gif|jpg|png|jpeg)$/)){ //Process only Images
-						methods.showMessage.apply(this,["imgErrMsg","Invalid file type"]);
+						methods.showMessage.apply(this,["imgErrMsg","请上传正确的图片文件!"]);
 						continue;
 					}
 					var reader = new FileReader();
@@ -316,12 +316,12 @@
 					id:"imgAlt",
 					type:"text",
 					class:"form-control form-control-link ",
-					placeholder:"Alt Text",
+					placeholder:"提示文字"
 				})).append($('<input/>',{
 					id:"imgTarget",
 					class:"form-control form-control-link ",
 					type:"text",
-					placeholder:"Link Target"
+					placeholder:"图片链接"
 				})).append($('<input/>',{
 					id:"imgHidden",
 					type:"hidden"
@@ -1024,19 +1024,21 @@
 			var menuBar = $( "<div/>",{ id : "menuBarDiv",
 				class : "row-fluid"
 			}).prependTo(containerDiv);
-			var editor  = $( "<div/>",{	class : "Editor-editor",
+			var editor  = $( "<div/>",{
+				class : "Editor-editor",
+				id:"Editor_Editor",
 				css : {overflow: "auto"},
 				contenteditable:"true"
 			}).appendTo(containerDiv);
 
 			//点击输入框后默认文本消失
-			var editorBox=$(".Editor-editor");
-			editorBox.html("在这里输入你想说的话...").css("color","#b3b3b3");
-			editorBox.on("click",function(){
-				if(editorBox.get(0).innerHTML==="在这里输入你想说的话..."){
-					$(this).html("").css("color","#000");
-				}
-			});
+			//var editorBox=$(".Editor-editor");
+			//editorBox.html("在这里输入你想说的话...").css("color","#b3b3b3");
+			//editorBox.on("click",function(){
+			//	if(editorBox.get(0).innerHTML==="在这里输入你想说的话..."){
+			//		$(this).html("").css("color","#000");
+			//	}
+			//});
 
 			//字数检测模块,如需要可以打开
 
@@ -1150,7 +1152,7 @@
 
 		createImageContext: function(event,cMenuUl){
 			var cModalId="imgAttribute";
-			var cModalHeader="Image Attributes";
+			var cModalHeader="图片属性";
 			var imgModalBody=methods.imageAttributeWidget.apply(this,["edit"]);
 			var onSave = function(){
 				var urlPattern = /(http|ftp|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])?/;
@@ -1185,7 +1187,7 @@
 			};
 			methods.createModal.apply(this,[cModalId,cModalHeader, imgModalBody, onSave]);
 			var modalTrigger = $('<a/>',{	href:"#"+cModalId,
-				"text":"Image Attributes",
+				"text":"设置图片属性",
 				"data-toggle":"modal"
 			}).click( function(e){
 				return function(){
@@ -1209,7 +1211,7 @@
 
 				}}(event));
 			cMenuUl.append($('<li/>').append(modalTrigger))
-				.append($('<li/>').append($('<a/>',{text:"Remove Image"}).click(
+				.append($('<li/>').append($('<a/>',{text:"移除图片"}).click(
 					function(e) { return function(){
 						$('#context-menu').remove();
 						$(e.target).closest("img").remove();

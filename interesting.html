@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>蓝莓派-乐趣</title>
+    <link rel="stylesheet" href="style/swiper-3.3.1.min.css"/>
+    <link rel="stylesheet" href="style/init.css"/>
+    <link rel="stylesheet" href="style/commonHeader.css"/>
+    <link rel="stylesheet" href="style/commonFooter.css">
+    <link rel="stylesheet" href="style/movement.css"/>
+    <link rel="stylesheet" href="style/login-tanchuceng.css"/>
+</head>
+<body>
+
+<!-- --------------------------------------公共主导航栏  start----------------------------------------->
+<div class="header">
+    <div class="header-in clearFix">
+        <div class="logo clearFix">
+            <img src="indexImg/logo_03.png" alt="logo"/>
+            <div class="flag-word">
+                <strong>蓝莓派</strong>
+                <h3>和音乐一起分享时光</h3>
+            </div>
+        </div>
+        <div class="main-nav clearFix">
+            <ul class="clearFix" id="nav">
+                <li><a href="index.html" class="navs" id="n_index">首页</a></li>
+                <li><a href="movement.html" class="navs" id="n_yz">乐章</a></li>
+                <li><span id="ts-num">12</span><a href="listenSpeak.html" class="navs" id="n_ts">听说</a></li>
+                <li><a href="interesting.html" class="navs on" id="n_yq">乐趣</a></li>
+                <li><a href="chat.html" class="navs" id="n_ll">聊聊</a></li>
+                <li><a href="#" class="navs" id="n_yj">游记</a></li>
+                <li><a href="#" class="navs" id="n_sy">摄影</a></li>
+                <li><a href="item.html" class="navs" id="n_cp">诚品</a></li>
+                <li><a href="blueberryjam.html" class="navs" id="n_lmj">蓝莓酱</a></li>
+                <li><a href="community.html" class="navs" id="n_sq">社区</a></li>
+
+            </ul>
+        </div>
+        <div class="login clearFix">
+            <div class="search">
+                <form action="">
+                    <input type="search" id="infinitySearch"/>
+                    <label for="infinitySearch" id="search-button"></label>
+                </form>
+            </div>
+            <div class="login-register">
+                <a href="javascript:void (0)" class="log" id="log">登录</a>
+                <a href="javascript:void (0)" class="reg" id="reg">注册</a>
+                <i class="triangle"></i>
+                <div class="account-info">
+                    <ul class="clearFix">
+                        <li><a href="#" class="a-info-details" id="a_tz">我的帖子</a></li>
+                        <li><a href="#" class="a-info-details" id="a_pl">我的评论</a></li>
+                        <li><a href="#" class="a-info-details" id="a_sc">我的收藏</a></li>
+                        <li><a href="#" class="a-info-details" id="a_sz">设置</a></li>
+                        <li><a href="#" class="a-info-details" id="a_tc">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------------------公共主导航栏  end----------------------------------------->
+
+<!-- ----------------------------------公共登录弹窗模块  start----------------------------------->
+<div class="login-mengban"></div>
+<div class="login-box">
+    <form action="">
+        <div class="login-reg-select clearFix">
+            <a href="#" class="login-select-btn a1 "><i class="login-on"></i>登录</a>
+            <a href="#" class="reg-select-btn"><i class="reg-on"></i>注册</a>
+        </div>
+        <div class="login-details account-box"  style="display:block">
+            <label for="login_account"></label>
+            <input type="text" id="login_account" placeholder="用户账号"/>
+            <label for="login_pwd"></label>
+            <input type="password" id="login_pwd" placeholder="用户密码"/>
+            <div class="check_code clearFix">
+                <div class="check-input">
+                    <label for="check_code_input1"></label>
+                    <input type="text" id="check_code_input1" placeholder="验证码"/>
+                </div>
+                <div class="check-pic">
+                    <img src="indexImg/check-code_04.png" alt=""/>
+                </div>
+            </div>
+            <label for="login-btn"></label>
+            <input type="submit" id="login-btn" value="登录"/>
+            <div class="other-login">
+                <p>你还可以用第三方帐号登录</p>
+                <a href="#"><img src="indexImg/qqIcon.png" alt=""/></a>
+                <a href="#"><img src="indexImg/weixinIcon.png" alt=""/></a>
+                <a href="#"><img src="indexImg/weiboIcon.png" alt=""/></a>
+            </div>
+        </div>
+        <div class="reg-details account-box"  style="display:none" >
+            <label for="reg_account"></label>
+            <input type="text" id="reg_account" placeholder="取个名字吧"/>
+            <label for="reg_pwd"></label>
+            <input type="password" id="reg_pwd" placeholder="设一个密码吧"/>
+            <label for="reg_pwd_confirm"></label>
+            <input type="password" id="reg_pwd_confirm" placeholder="再输一遍密码吧"/>
+            <div class="check_code clearFix">
+                <div class="check-input">
+                    <label for="check_code_input2"></label>
+                    <input type="text" id="check_code_input2" placeholder="验证码"/>
+                </div>
+                <div class="check-pic">
+                    <img src="indexImg/check-code_04.png" alt=""/>
+                </div>
+            </div>
+            <label for="reg-btn"></label>
+            <input type="submit" id="reg-btn" value="注册"/>
+        </div>
+    </form>
+    <a class="findback-pwd" href="#">忘记密码?</a>
+</div>
+<!-- ----------------------------------公共登录弹窗模块  end----------------------------------->
+
+<!-- ----------------------------------主体部分  start----------------------------------->
+<div class="container">
+    <div class="song-introduce">
+        <div class="song-info clearFix">
+            <div class="song-title"><a href="#" id="song_title"></a></div>
+            <div class="play-num"><span id="play_num"></span>播放</div>
+        </div>
+        <div class="song-details clearFix">
+            <div class="song-pic"><img src="" alt=""/></div>
+            <div class="song-intro-cont"></div>
+        </div>
+        <div class="song-control">
+            <!--开始设置播放器-->
+            <div class="playutil">
+                <audio id="aud" >
+                    <!--<source src=""/>您的浏览器不支持 audio 元素。-->
+                </audio>
+                <!--播放按钮-->
+                <div class="control clearFix">
+                    <div class="buttons">
+                        <!--预留上一曲按钮-->
+                        <!--<a id="nextleftbtn" onMou seOver="overchangleft()" onMo useOut="outchangleft()" onclick="nextleft()">-->
+                        <!--<img id="leftbutton" src="indexImg/play-btn_03.png"/>-->
+                        <!--</a>-->
+                        <a id="playbtn" onMo useOver="overchangplay()" onMouse Out="outchangplay()">
+                            <img id="playbutton" src=""/>
+                        </a>
+                        <!--预留下一曲按钮-->
+                        <!--<a id="nextrightbtn" onMou seOver="overchangright()" onMous eOut="outchangright()" onclick="nextright()">-->
+                        <!--<img id="rightbutton" src="indexImg/play-btn_03.png"/>-->
+                        <!--</a>-->
+                    </div>
+                    <p id="passTime">00:00</p>
+                    <div class="progressBar clearFix">
+                        <div class="progressBar-passed"></div>
+                        <div class="progressBar-remain"></div>
+                    </div>
+                    <p id="totalTime">00:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="common-deatails clearFix">
+        <div class="artical-cont">
+            <div class="yj-artical">
+                <h3></h3>
+                <div class="yj-artical-info">
+                    <div class="eye-wechat">
+                        <span id="eye_num" class="eye-wechat-num"></span>
+                        <span id="wei_chat_num" class="eye-wechat-num"></span>
+                    </div>
+                    <div class="create-time">
+                        创建时间 : <span class="currentDate"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="artical-cont-details">
+                <div class="blog-details" id="blog_details">
+                    <div class="user-pre-cont">
+                        但是方便快捷的身份
+                        <!-- 这里面是后台取过来的文章数据-->
+                    </div>
+                    <div class="blog-labels">
+                        <!--这里面是来自后台的标签-->
+                    </div>
+                    <div class="endIcon">
+                        <img src="indexImg/endIcon_03.png" alt="endIcon" />
+                    </div>
+                </div>
+                <div class="related-read">
+                    <div class="related-read-title"><a href="#">相关阅读</a></div>
+                    <div class="related-read-cont clearFix">
+                        <div class="related-read-cont-show">
+                            <a href="#">
+                                <img class="related-read-pic" src="" alt=""/>
+                                <p class="related-read-summary"></p>
+                            </a>
+                        </div>
+                        <div class="related-read-cont-show">
+                            <a href="#">
+                                <img class="related-read-pic" src="" alt=""/>
+                                <p class="related-read-summary"></p>
+                            </a>
+                        </div>
+                        <div class="related-read-cont-show">
+                            <a href="#">
+                                <img class="related-read-pic" src="" alt=""/>
+                                <p class="related-read-summary"></p>
+                            </a>
+                        </div>
+                        <div class="related-read-cont-show">
+                            <a href="#">
+                                <img class="related-read-pic" src="" alt=""/>
+                                <p class="related-read-summary"></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="related-read-share clearFix">
+                        <div class="share-left">
+                            <div class="share-left-icons">
+                                <a href="#"><img src="indexImg/shareIcon_03.png" alt=""/></a>
+                                <a href="#"><img src="indexImg/shareIcon_05.png" alt=""/></a>
+                                <a href="#"><img src="indexImg/shareIcon_07.png" alt=""/></a>
+                                <a href="#"><img src="indexImg/shareIcon_09.png" alt=""/></a>
+                            </div>
+                            <span>喜欢的话就分享出去吧!</span>
+                        </div>
+                        <div class="share-right">
+                            <a href="#">分享长微博</a>
+                            <a href="#"><img src="indexImg/zan-big_03.png" alt=""/> 赞 <span id="blog_zan_num"></span></a>
+                            <a href="#"><img src="indexImg/favorites_03.png" alt=""/> 收藏</a>
+                            <a class="report" href="#">举报</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-comment">
+                    <div class="who-zan">
+                        <h4>赞过的人</h4>
+                        <div class="who-zan-list clearFix">
+                            <!--这里面是赞过的人列表-->
+                        </div>
+                    </div>
+                    <div class="theme-pic">
+                        <a href="#"><img src="" alt=""/></a>
+                    </div>
+                    <div>评论框</div>
+                    <div class="ts-popcomment">
+                        <!--里面是评论的内容-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 右边侧栏 start-->
+        <div class="artical-other">
+            <div class="msg-center aside-box">
+                <div class="msg-center-up clearFix">
+                    <div class="blueberrypaiIcon clearFix">
+                        <img src="indexImg/aside-logo_03.png" alt=""/>
+                        <h1 class="gray">蓝莓派</h1>
+                    </div>
+                    <div class="square-btn gray">
+                        <p class="tiezi-num" id="tiezi_num"></p>
+                        <p class="tiezi-name">帖子</p>
+                    </div>
+                    <div class="square-btn gray">
+                        <p class="tiezi-num" id="comment_num"></p>
+                        <p class="tiezi-name">评论</p>
+                    </div>
+                    <div class="square-btn gray">
+                        <p class="tiezi-num" id="concern_num"></p>
+                        <p class="tiezi-name">关注</p>
+                    </div>
+                </div>
+
+                <div class="msg-center-down gray clearFix">
+                    <div class="circle-btn concern"><a href="#"></a></div>
+                    <div class="circle-btn private-msg"><a href="#"></a></div>
+                </div>
+            </div>
+            <div class="other-blog aside-box">
+                <h3 class="other-blog-title">作者的其他文章</h3>
+                <ul>
+                    <!--里面是作者的其他文章内容-->
+                </ul>
+            </div>
+            <div class="hot-recomment aside-box">
+                <h3 class="other-blog-title ">热门推荐</h3>
+                <ul>
+                    <!--里面是热门推荐的内容-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------------------主体部分  end----------------------------------->
+
+<!-- --------------------------------------公共尾部  start----------------------------------------->
+<div class="footer">
+    <div class="blink-con">
+        <div class="btn-l">
+            <span>友情链接</span>
+            <p class="link-cont">
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">乐乎</a>
+                <a href="#">数字尾巴</a>
+                <a href="#">豆瓣</a>
+                <a href="#">环球旅行</a>
+            </p>
+        </div>
+        <div class="btn-r">
+            <div class="weibo">
+                <img src="image/footer-ewm1.jpg" alt="twitter">
+                <span>微博二维码</span>
+            </div>
+            <div class="weixin">
+                <img src="image/footer-ewm2.jpg" alt="weichat">
+                <span>微信二维码</span>
+            </div>
+            <div class="connect">
+                <p>电话:51336808</p>
+                <p><i>邮编:100062</i>&nbsp;&nbsp;<i>传真:51337666</i></p>
+                <p>邮箱:info@newworldtours.cn</p>
+                <p>地址:北京市东城区广渠门内大街安化北里1号长保大厦13层</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <div class="bot-con">
+        <span><a href="joinUs.html">关于我们</a></span>
+        <span><a href="#">联系我们</a></span>
+        <span><a href="#">加入我们</a></span>
+        <span><a href="#">团队成员</a></span>
+        <span><a href="#">商务合作</a></span>
+        <p class="bot-foot">
+            <em>蓝莓派版权所有</em><em>京ICP备12346335号</em>
+        </p>
+    </div>
+</div>
+
+<!-- --------------------------------------公共尾部  end----------------------------------------->
+
+</body>
+
+<script src="script/jquery-2.1.1.min.js"></script>
+<script src="script/login-tanchuceng.js"></script>
+<script src="script/movement.js"></script>
+</html>
+
+

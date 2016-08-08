@@ -5,25 +5,25 @@
  * @params   暂无
  */
 $.fn.ProvinceCity = function(){
-	var _self = this;
+	var _self = $(".p_place");
 	//定义3个默认值
 	_self.data("province",["请选择", "请选择"]);
 	_self.data("city1",["请选择", "请选择"]);
 	_self.data("city2",["请选择", "请选择"]);
 	//插入3个空的下拉框
-	_self.append("<select></select>");
-	_self.append("<select></select>");
-	_self.append("<select></select>");
+	_self.append("<select class='p_select1'></select>");
+	_self.append("<select class='p_select2'></select>");
+	_self.append("<select class='p_select3'></select>");
 	//分别获取3个下拉框
 	var $sel1 = _self.find("select").eq(0);
 	var $sel2 = _self.find("select").eq(1);
 	var $sel3 = _self.find("select").eq(2);
 	//默认省级下拉
 	if(_self.data("province")){
-		$sel1.append("<option value='"+_self.data("province")[1]+"'>"+_self.data("province")[0]+"</option>");
+		$sel1.append("<option value='"+_self.data("province")[1]+"'>"+"&nbsp"+"&nbsp"+"&nbsp"+_self.data("province")[0]+"</option>");
 	}
 	$.each( GP , function(index,data){
-		$sel1.append("<option value='"+data+"'>"+data+"</option>");
+		$sel1.append("<option value='"+data+"'>"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+data+"</option>");
 	});
 	//默认的1级城市下拉
 	if(_self.data("city1")){
@@ -42,17 +42,17 @@ $.fn.ProvinceCity = function(){
 		index1 = this.selectedIndex;
 		if(index1==0){	//当选择的为 “请选择” 时
 			if(_self.data("city1")){
-				$sel2.append("<option value='"+_self.data("city1")[1]+"'>"+_self.data("city1")[0]+"</option>");
+				$sel2.append("<option value='"+_self.data("city1")[1]+"'>"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+_self.data("city1")[0]+"</option>");
 			}
 			if(_self.data("city2")){
-				$sel3.append("<option value='"+_self.data("city2")[1]+"'>"+_self.data("city2")[0]+"</option>");
+				$sel3.append("<option value='"+_self.data("city2")[1]+"'>"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+_self.data("city2")[0]+"</option>");
 			}
 		}else{
 			$.each( GT[index1-1] , function(index,data){
-				$sel2.append("<option value='"+data+"'>"+data+"</option>");
+				$sel2.append("<option value='"+data+"'>"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+data+"</option>");
 			});
 			$.each( GC[index1-1][0] , function(index,data){
-				$sel3.append("<option value='"+data+"'>"+data+"</option>");
+				$sel3.append("<option value='"+data+"'>"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+data+"</option>");
 			})
 		}
 	}).change();
@@ -62,8 +62,12 @@ $.fn.ProvinceCity = function(){
 		$sel3[0].options.length=0;
 		index2 = this.selectedIndex;
 		$.each( GC[index1-1][index2] , function(index,data){
-			$sel3.append("<option value='"+data+"'>"+data+"</option>");
+			$sel3.append("<option value='"+data+"'>"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+data+"</option>");
 		})
 	});
 	return _self;
+
 };
+$(function(){
+	$("#addrBox").ProvinceCity();
+});

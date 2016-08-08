@@ -184,7 +184,7 @@ body{
 }
 .upload-music .music-name{
     position: absolute;
-    top: 6px;
+    top: 12px;
     left: 471px;
 }
 #introduce_music{
@@ -193,6 +193,8 @@ body{
     letter-spacing:1px;
     font-size:14px;
     color:#b3b3b3;
+    resize: none;
+    outline: none;
 }
 .submitBtn{
     width:350px;
@@ -232,6 +234,40 @@ body{
     cursor:pointer;
 }
 
-.hahahahaha{
-
+/*由于本页面引入了bootstrap.css文件,为了避免样式冲突,对于登录弹窗作以下单独配置 start*/
+label {
+     display: block;
+     max-width: 100%;
+     margin:0;
+     font-weight: 500;
 }
+button, input, optgroup, select, textarea {
+     margin: 0;
+     font: inherit;
+     color: inherit;
+}
+*{
+     -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+     box-sizing: content-box;
+}
+.pb-container{
+    box-sizing: border-box;
+}
+@media (min-width: 1200px) {
+    .col-lg-6 {
+        width: 43%;
+    }
+}
+body {
+    font-family: "Microsoft YaHei",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: #333;
+    background-color: #fff;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    height: auto;
+    margin-bottom: 0;
+}
+/*由于本页面引入了bootstrap.css文件,为了避免样式冲突,对于登录弹窗作以下单独配置 end*/

@@ -64,8 +64,6 @@ body{
     float: left;
     width: 260px;
     height: 260px;
-    opacity:0;
-    transition:all 0.5s;
 }
 .container .song-introduce .song-details .song-pic img{
     width:100%;
@@ -195,7 +193,7 @@ body{
     left:0;
     background:url(../indexImg/eye_03.png) no-repeat center center;
 }
-.container .common-deatails .artical-cont .yj-artical .yj-artical-info .eye-wechat span#wei_chat-num::before{
+.container .common-deatails .artical-cont .yj-artical .yj-artical-info .eye-wechat span#wei_chat_num::before{
     content:"";
     display:block;
     width:23px;
@@ -218,20 +216,19 @@ body{
 .artical-cont-details .blog-details{
     width:100%;
 }
-.artical-cont-details .blog-details p{
-    font-size:14px;
-    line-height:25px;
-    letter-spacing:2px;
-    color:#666;
-}
-.artical-cont-details .blog-details p img.blog-pic{
+.artical-cont-details .blog-details .user-pre-cont img.blog-pic{
     display:block;
     max-width:100%;
     margin-top:20px;
 }
 .artical-cont-details .blog-details .blog-labels{
-    margin-top:20px;
-    position:relative;
+    margin-top: 20px;
+    position: relative;
+    border-top: 1px solid #ded7d7;
+    padding: 10px 0 0 20px;
+}
+.label{
+    color: #fff;display: inline-block;background: #999;text-align: center;padding: 0 10px;border-radius: 20px;font-size: 12px;
 }
 .artical-cont-details .blog-details .blog-labels::before{
     content:"";
@@ -239,7 +236,7 @@ body{
     width:23px;
     height:14px;
     position:absolute;
-    top: 4px;
+    top: 13px;
     left: -4px;
     background:url(../indexImg/labelIcon_03.png) no-repeat center center;
 }
@@ -416,7 +413,7 @@ body{
     height: 14px;
     position: absolute;
     top: 2px;
-    left: 41px;
+    left: 38px;
     background:url(../indexImg/gray-wechat.png) no-repeat center center;
     cursor:pointer;
 }
@@ -568,7 +565,7 @@ body{
     padding:20px;
 }
 .blueberrypaiIcon{
-    margin-bottom:20px;
+    margin:20px auto;
 }
 .blueberrypaiIcon img{
     float:left;

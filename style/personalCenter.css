@@ -631,7 +631,6 @@ appearance:none;
 	width: 100px;
 	height: 38px;
 	border-radius: 4px;
-	
 	z-index: 999;
 }
 
@@ -1999,7 +1998,36 @@ a.upload-img:hover{
 
 
 
-
+.p_select1{
+	display: inline-block;
+	left: 0;
+	top: 0;
+	width: 100px;
+	height: 38px;
+	border-radius: 4px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei", Arial, Helvetica, light sans-serif;
+}
+.p_select2{
+	display: inline-block;
+	margin-left: 5px;
+	top: 0;
+	width: 100px;
+	height: 38px;
+	border-radius: 4px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei", Arial, Helvetica, light sans-serif;
+}
+.p_select3{
+	display: inline-block;
+	margin-left: 5px;
+	top: 0;
+	width: 100px;
+	height: 38px;
+	border-radius: 4px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei", Arial, Helvetica, light sans-serif;
+}
 
 
 

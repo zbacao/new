@@ -26,7 +26,7 @@ ms_DatePicker: function (options) {
 			var yearSel = $YearSelector.attr("rel");
             for (var i = yearNow; i >= 1900; i--) {
 				var sed = yearSel==i?"selected":"";
-				var yearStr = "<option value=\"" + i + "\" " + sed+">" +"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+ i +"&nbsp"+"年"+ "</option>";
+				var yearStr = "<option value=\"" + i + "\" " + sed+">" +"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+ i +"&nbsp"+"年"+ "</option>";
                 $YearSelector.append(yearStr);
             }
 

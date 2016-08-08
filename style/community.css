@@ -9,8 +9,15 @@
     border-bottom: 4px solid transparent;
     position: relative;
 }
+.ts-nav .sq-drag.lmj-d{
+    margin-right: 80px;
+}
 .ts-nav .sq-drag.on{
     border-top: 4px solid #119c58;
+}
+.ts-nav .sq-drag.lmj-d.on{
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid #119c58;
 }
 .sq-drag .sq-title{
     width: 100%;
@@ -99,4 +106,30 @@
 }
 .sq-leftnav .ts-leftnav-tab6{
     background-position: 3px -102px;
+}
+
+/*针对不同的类别卡片 不同颜色的标签*/
+.ts-card .tag-yz{
+    color:#8dd539;
+    border:1px solid #8dd539;
+}
+.ts-card .tag-ts{
+    color:#ffc007;
+    border:1px solid #ffc007;
+}
+.ts-card .tag-ll{
+    color:#ff5777;
+    border:1px solid #ff5777;
+}
+.ts-card .tag-yq{
+    color:#a748ae;
+    border:1px solid #a748ae;
+}
+.ts-card .tag-yj{
+    color:#0091ea;
+    border:1px solid #0091ea;
+}
+.ts-card .tag-sy{
+    color:#47d4e6;
+    border:1px solid #47d4e6;
 }

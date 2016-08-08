@@ -146,7 +146,7 @@
 }
 .ts-nav .ts-push{
 	float: right;
-	width: 100px;
+	/*width: 100px;*/
 	height: 30px;
 	margin-top: 20px;
 	border-radius: 15px;
@@ -155,12 +155,12 @@
 }
 .ts-nav .tsfb-btn{
 	display: inline-block;
+	margin:0 20px;
 	height: 30px;
 	line-height: 30px;
 	font-size: 16px;
 	color: #109d59;
 	text-align: center;
-	width: 100%;
 }
 .ts-nav .tsfb-btn i{
 	background: url(../image/listenSpeak/spriteicon.png) 0 -118px no-repeat;
@@ -217,7 +217,7 @@
 /* 内容区样式 */
 .ts-container{
 	width: 1224px;
-	height: 1600px;
+	height: 1200px;
 	margin: 0 auto;
 	margin-top: 20px;
 	position: relative;
@@ -273,10 +273,13 @@
 	height: 20px;
 	border-radius: 10px;
 	line-height: 20px;
-	border:1px solid #8dd539;
 	text-align: center;
 	vertical-align: top;
 	margin-top: 15px;
+}
+.ts-card .tag-ts{
+	color:#8dd539;
+	border:1px solid #8dd539;
 }
 .ts-card img{
 	width: 100%;

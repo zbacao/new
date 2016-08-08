@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>蓝莓派-创建小组</title>
     <link rel="stylesheet" href="style/init.css"/>
     <link rel="stylesheet" href="style/commonHeader.css"/>
     <link rel="stylesheet" href="style/commonFooter.css">
@@ -24,15 +24,15 @@
         <div class="main-nav clearFix">
             <ul class="clearFix" id="nav">
                 <li><a href="index.html" class="navs" id="n_index">首页</a></li>
-                <li><a href="movement.html" class="navs on" id="n_yz">乐章</a></li>
+                <li><a href="movement.html" class="navs" id="n_yz">乐章</a></li>
                 <li><span id="ts-num">12</span><a href="listenSpeak.html" class="navs" id="n_ts">听说</a></li>
-                <li><a href="#" class="navs" id="n_yq">乐趣</a></li>
-                <li><a href="#" class="navs" id="n_ll">聊聊</a></li>
+                <li><a href="interesting.html" class="navs" id="n_yq">乐趣</a></li>
+                <li><a href="chat.html" class="navs" id="n_ll">聊聊</a></li>
                 <li><a href="#" class="navs" id="n_yj">游记</a></li>
                 <li><a href="#" class="navs" id="n_sy">摄影</a></li>
-                <li><a href="#" class="navs" id="n_cp">诚品</a></li>
-                <li><a href="#" class="navs" id="n_lmj">蓝莓酱</a></li>
-                <li><a href="personalCenter.html" class="navs" id="n_sq">社区</a></li>
+                <li><a href="item.html" class="navs" id="n_cp">诚品</a></li>
+                <li><a href="blueberryjam.html" class="navs" id="n_lmj">蓝莓酱</a></li>
+                <li><a href="community.html" class="navs" id="n_sq">社区</a></li>
 
             </ul>
         </div>
@@ -44,8 +44,8 @@
                 </form>
             </div>
             <div class="login-register">
-                <a href="javascript:;" class="log" id="log">登录</a>
-                <a href="javascript:;" class="reg" id="reg">注册</a>
+                <a href="javascript:void (0)" class="log" id="log">登录</a>
+                <a href="javascript:void (0)" class="reg" id="reg">注册</a>
                 <i class="triangle"></i>
                 <div class="account-info">
                     <ul class="clearFix">
@@ -178,13 +178,13 @@
                             <div class="new-contentarea tc"><a href="javascript:void(0)" class="upload-img">
                                 <label for="upload-file"></label>
                             </a>
-                                <input type="file" class="" name="upload-file" id="upload-file"/>
+                                <input type="file" class="" name="upload-file" id="upload-file" accept="image/*"/>
                             </div>
                             <input type="button" id="btnCrop" class="Btnsty_peyton" value="">
                             <input type="button" id="btnZoomIn" class="Btnsty_peyton" value="+">
                             <input type="button" id="btnZoomOut" class="Btnsty_peyton" value="-">
                         </div>
-                        <div class="p_cropped"></div>
+                        <div class="p_cropped" style="display:none"></div>
                     </div>
                 </div>
         </div>
@@ -256,7 +256,7 @@
 </div>
 <div class="bottom">
     <div class="bot-con">
-        <span><a href="joinUs.html">关于我们</a></span>
+        <span><a href="JoinUs.html">关于我们</a></span>
         <span><a href="#">联系我们</a></span>
         <span><a href="#">加入我们</a></span>
         <span><a href="#">团队成员</a></span>
@@ -271,9 +271,5 @@
 </body>
 <script src="script/jquery-2.1.1.min.js"></script>
 <script src="script/login-tanchuceng.js"></script>
-<script src="script/publishBlog.js"></script>
-<script>
-    $(".ceshi",{id:"ceshi1",class:"ceshi1",css:{width:"300px",height:"200px",background:"#eee"}});
-//    $(".ceshi").append(haha);
-</script>
+<script src="script/create-group.js"></script>
 </html>

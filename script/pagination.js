@@ -19,14 +19,14 @@ $(function(){
             obj.remove('.tspage-start');
             obj.append('<span class="tspage-before disable">上一页</span>');
         }
-        if(current>4 && current <= page && page>5){
+        if(current>3 && current <= page && page>5){
             obj.append('<span class="tspage-ell">...</span>');
         }
         var start = current-2, end= current+2; //中间显示5个
         if(start >1 && current < 4||current == 1){
             end++; //前面会没有省略号。
         }
-        if(current > page-4 && current >= page){
+        if(current > page-2 && current <= page){
             start--; //后面的省略号消失
         }
         for(;start<=end;start++){
@@ -38,7 +38,7 @@ $(function(){
                 }
             }
         }
-        if(current+2<page-1 && current >=1 && page>5){
+        if(current+2<page && current >=1 && page>4){
             obj.append('<span class="tspage-ell">...</span>');
         }
         if(current<page){
