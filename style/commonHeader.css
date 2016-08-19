@@ -140,11 +140,11 @@ body{
     padding-left: 15px!important;
     box-sizing: border-box!important;
     color: #16A085!important;
-    font-size: 16px!important;
+    font-size: 18px!important;
 }
 .header .header-in .login .search #search-button{
     position: absolute;
-    top: 32px;
+    top: 31px;
     right: 0;
     width: 30px;
     height: 27px;
@@ -154,7 +154,6 @@ body{
     text-align: center;
     margin-right: -2px;
     background:#2ECC71 url(../indexImg/searchIcon_06.png) no-repeat center;
-    background-size: 62%;
     cursor:pointer;
 }
 .header .header-in .login .search #search-button:hover{

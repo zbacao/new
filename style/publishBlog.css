@@ -200,7 +200,7 @@ body{
     width:350px;
     margin:0 auto;
 }
-.submitBtn #publicBlog{
+.submitBtn .publicBlog{
     border-radius:30px;
     background:#f68344;
     height:50px;
@@ -211,10 +211,10 @@ body{
     text-indent:1em;
     transition:background 0.4s;
 }
-.submitBtn #publicBlog:hover{
+.submitBtn .publicBlog:hover{
     background: #e3753f;
 }
-.submitBtn #save{
+.submitBtn .save{
     border-radius:30px;
     background:#e6e6e6;
     height:50px;
@@ -225,7 +225,7 @@ body{
     text-indent:1em;
     transition:background 0.4s;
 }
-.submitBtn #save:hover{
+.submitBtn .save:hover{
     background: #d4d4d4;
 }
 

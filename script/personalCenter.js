@@ -174,17 +174,13 @@ $(window).load(function () {
     }
 
 
- 
-
-
-
 
 //        设置年月日插件
     $(".p_rsetb").on("click", "li", function () {
         $(this).addClass("p_rs").siblings().removeClass("p_rs");
     });
 
-
+//下来框插件
     $(function () {
         $(".p_select ").each(function () {
             var s = $(this);
@@ -269,7 +265,6 @@ $(window).load(function () {
 
 
     $.getJSON("json/bbsdata.json",function(data){
-
         var num=[];
         $(data.bbs).each(function(index,ele){
         if(ele.ty=="normal"){
@@ -349,6 +344,8 @@ $(window).load(function () {
         })
 
     })
+
+
 
     // 私信切换
   

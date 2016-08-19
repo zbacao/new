@@ -4,9 +4,11 @@
 $(function() {
 
     //这里是富文本框里面的内容接口
-    $("#publicBlog").on("click",function(){
+    $("#backPrevPage").on("click",function(){
+    //$("#publicBlog").on("click",function(){
         //获取富文本框里面的内容
         var articalData=encodeURI($("#Editor_Editor").html());
+        console.log(articalData);
         $.ajax({
             url:"http://www.yuan.com/text.php",
             type:"POST",

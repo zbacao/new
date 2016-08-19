@@ -13,6 +13,14 @@ $(function(){
         }
     });
 
+    $("#reg").on("click",function(){
+        $(loginMengban).css({display:'block'});
+        $(loginBox).css({display:'block'});
+        window.onmousewheel=document.onmousewheel=function() {
+            return false;
+        }
+    });
+
 
     $(loginMengban).on("click",function(){
         $(loginMengban).css({display:'none'});

@@ -1,6 +1,3 @@
-body{
-    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
-}
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     margin: 0;
     padding: 0;
@@ -18,10 +15,9 @@ input {
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }
-
 * {
     background-repeat: no-repeat;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);       /*取消表单元素在手机中出现的边框*/
 }
 
 ul, li, ol {
@@ -30,9 +26,9 @@ ul, li, ol {
 
 img {
     border: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);   /*取消图片元素在手机中出现的边框*/
 }
-
+/*高度自动伸缩*/
 html, body {
     height: 100%;
 }
@@ -47,7 +43,7 @@ a {
     outline: none;
     tap-highlight-color: rgba(0, 0, 0, 0);
     focus-ring-color: rgba(0, 0, 0, 0);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);              /*当用户点击iOS的Safari浏览器中的链接或JavaScript的可点击的元素时，覆盖显示的高亮颜色。*/
     -webkit-focus-ring-color: rgba(0, 0, 0, 0);
     -moz-tap-highlight-color: rgba(0, 0, 0, 0);
     -moz-focus-ring-color: rgba(0, 0, 0, 0);
@@ -60,13 +56,35 @@ a:visited {
 input, button {
     outline: none;
 }
+body{
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+em{
+    font-style: normal;
+}
+table{
+    border-collapse:collapse;
+}
+textarea{
+    resize:none;
+    overflow: auto;
+}
+.clear{
+    zoom:1;
+}
 .clearFix::after{
     content:"";
     display:block;
     visibility: hidden;
     clear:both;
 }
-
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
 /*雪碧图模板
 
 content:"";

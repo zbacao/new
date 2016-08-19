@@ -40,7 +40,7 @@ Selected.prototype = {
                     var prevLine = document.getElementsByClassName("lyc-text")[n];
                     prevLine.className = 'lyc-text';
                     line.className = 'lyc-text '+'on';
-                    that.lyricContainer.style.top = 100-line.offsetTop + 'px';
+                    that.lyricContainer.style.top = 190-line.offsetTop + 'px';
                 };
             };
         });
